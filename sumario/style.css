@@ -39,6 +39,33 @@ p{
     font-size: 18px;
 }
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.box-reaction{
+    background-color: var(--Light-red-200);
+    color: var(--Light-red);
+}
+
+.box-memory{
+    background-color: var(--Orangey-yellow-200);
+    color: var(--Orangey-yellow);
+}
+
+.box-verbal{
+    background-color: var(--Green-teal-200);
+    color: var(--Green-teal);
+}
+
+.box-visual{
+    background-color: var(--Cobalt-blue-200);
+    color: var(--Cobalt-blue);
+}
+
 .container{
     display: flex;
     justify-content: center;
@@ -48,4 +75,116 @@ p{
     max-width: 1440px;
     min-width: 375px;
     height: 100vh;
+    height: 100vh;
+}
+
+main{
+    background-color: var(--White);
+    border-radius: 22px;
+    display: flex;
+    gap: 3rem;
+}
+
+.result{
+    background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+    padding: 2rem;
+    color: var(--Light-lavender);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 22px;
+}
+
+.result .result-points{
+    background: linear-gradient(var(--Violet-blue), var(--Persian-blue));
+    padding: 2rem;
+    border-radius: 50%;
+}
+
+.result-points{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    font-size: .8rem;
+}
+
+.result-points span{
+    color: var(--White);
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.result-feedback{
+    color: var(--White);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.result-description{
+    max-width: 16rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.summary{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.summary h3{
+    color: var(--Dark-gray-blue);
+}
+
+.summary-box{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: .7rem;
+    border-radius: 8px;
+}
+
+.summary-info{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.summary-box h5{
+    color: var(--Dark-gray-blue);
+}
+
+.summary-calc span{
+    font-weight: 700;
+}
+
+.summary button{
+    background-color: var(--Dark-gray-blue);
+    border: none;
+    border-radius: 22px;
+    color: var(--White);
+    font-weight: 700;
+    padding: .8rem 5rem;
+}
+
+@media only screen and (max-width:610px){
+    main{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .result{
+        width: 100%;
+    }
+
+    .summary{
+        max-width: 500px;
+    }
 }
